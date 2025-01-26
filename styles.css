@@ -207,6 +207,13 @@ a {
 .button {
   justify-items: center;
   border: none;
+  text-transform: uppercase;
+  font-family: var(--font-family-title);
+  font-weight: 700;
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 .subscribe-button:hover,
@@ -214,32 +221,24 @@ a {
   background-color: var(--color-orangr-alternate);
 }
 
-.button a {
-  padding: 25px 47px 25px 40px;
-  font-family: var(--font-family-title);
-}
 
 .header-container a:hover {
   color: var(--color-orange);
 }
 
 .basket-button {
+  display: flex;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   border: none;
   background-color: transparent;
+  align-items: center;
+  justify-content: center;
 }
 
 .basket-button:hover {
   background-color: var(--color-orange);
-}
-
-.basket-button a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  padding: 10px 6px;
 }
 
 .header__widget-wrapper a:hover {
@@ -310,6 +309,7 @@ a {
   height: 266px;
   top: 14%;
   left: 1%;
+  z-index: 1;
   background: url(./icons/img_pseudo/main_colored-plant.svg) center/contain no-repeat;
 }
 
@@ -411,6 +411,13 @@ a {
   width: 170px;
   height: 60px;
   background-color: var(--color-orange);
+  font-family: var(--font-family-title);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 28px;
+  letter-spacing: 2.4px;
+  color: var(--color-white);
+  text-transform: uppercase;
 }
 
 .view-more-button a {
@@ -583,6 +590,7 @@ a {
 .news_item-subtitle {
   font-family: var(--font-family-subtitle);
   color: var(--color-gray);
+  font-weight: 400;
   padding-top: 14px;
   font-size: 0.9375rem;
   line-height: 24px;
@@ -592,18 +600,17 @@ a {
 .news-section_button {
   margin-top: 28.50356%;
   background-color: transparent;
-}
-
-.news-section_button a:hover {
-  color: var(--color-gray);
-
-}
-
-.news-section_button a {
   font-weight: 700;
   color: var(--color-black);
-  padding-left: 0;
   font-size: 0.8125rem;
+  font-family: var(--font-family-title);
+  line-height: 28px;
+  letter-spacing: 1.95px;
+}
+
+.news-section_button:hover {
+  color: var(--color-orange);
+
 }
 
 .products {
@@ -693,9 +700,6 @@ a {
 .add-to-cart_button {
   background-color: transparent;
   width: 220px;
-}
-
-.add-to-cart_button a {
   display: flex;
   gap: 10px;
   font-weight: 700;
@@ -704,11 +708,11 @@ a {
   letter-spacing: 1.95px;
   padding: 20px;
   color: var(--color-black);
-
+  align-items: center;
 }
 
-.add-to-cart_button a:hover {
-  color: var(--color-gray);
+.add-to-cart_button:hover {
+  color: var(--color-orange);
 }
 
 .product_biologist {
@@ -888,12 +892,12 @@ a {
 
 .learn-more-button {
   background-color: transparent;
-  padding-left: 0;
-  padding-bottom: 20px;
+  margin-top: 16px;
+  margin-bottom: 50px;
+  padding: 10px 0 0 10px;
 }
 
 .learn-more-button a {
-  padding-left: 0;
   font-weight: 700;
   font-size: 13px;
   line-height: 28px;
@@ -1018,7 +1022,7 @@ a {
   background-color: transparent;
 }
 
-.footer h5 {
+.footer p {
   font-family: var(--font-family-subtitle);
   font-weight: 400;
   font-size: 12px;
