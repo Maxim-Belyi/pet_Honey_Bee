@@ -704,6 +704,7 @@ a {
   padding: 20px;
   color: var(--color-black);
   align-items: center;
+  justify-content: center;
 }
 
 .add-to-cart_button:hover {
@@ -725,6 +726,7 @@ a {
   height: 15.51%;
   top: 21%;
   left: 20%;
+  translate: -100% 0;
   background: url(./icons/quotes.svg) center/contain no-repeat;
 }
 
@@ -1039,7 +1041,13 @@ a {
   }
 
   .header__banner {
+    margin: auto;
     grid-template-columns: 1fr 40%;
+   padding-top: 70px;
+  }
+
+  .banner_text-wrapper {
+    padding-left: 11%;
   }
 
   .header__banner::after {
@@ -1118,9 +1126,12 @@ a {
 
   .header-container {
     display: grid;
-    justify-content: center;
-    justify-items: end;
     padding-top: 20px;
+    row-gap: 10px;
+  }
+
+  .header-container ul {
+    justify-content: center;
   }
 
   .header_logo {
@@ -1205,6 +1216,7 @@ a {
   .header-container {
     column-gap: 3%;
     grid-template-columns: 40% auto;
+    
   }
 
   .section-title {
@@ -1216,18 +1228,35 @@ a {
   }
 
   .header__widget-wrapper {
+    height: auto;
     grid-row: 1/-1;
     align-items: center;
     justify-content: center;
-    align-content: center
+    align-content: center;
+    
+  }
+
+  .contact-button {
+    width: 100px;
+    height: auto;
+    font-size: 0.8rem;
   }
 
   .banner_text-wrapper {
     padding-left: 6%;
+    
   }
 
   .header__link-wrapper {
     grid-column: 1/3;
+ 
+  }
+
+  .header__link-wrapper ul {
+    font-size: 0.75rem;
+    gap: 25px;
+    padding: 0;
+    justify-content: space-between;
   }
 
   .banner_title {
@@ -1259,6 +1288,7 @@ a {
   .subscribe {
     grid-template-columns: auto;
     background: url(./images/subscribe_img.svg) center/contain no-repeat;
+    justify-items: center;
   }
 
   .subscribe_img {
@@ -1311,6 +1341,10 @@ a {
     justify-content: center;
     padding-top: 0;
     gap: 3%;
+  }
+
+  .header__link-wrapper ul {
+    font-size: 0.55rem;
   }
 
   .subscribe-button {
